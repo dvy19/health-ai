@@ -1,6 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
+
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -9,6 +11,7 @@ import { getAuth } from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyCnhWx1NY8UlJzYy-EP5w4JcJmUuzfM_IE",
   authDomain: "health-ai-c7ce9.firebaseapp.com",
+  databseURL:"https://health-ai-c7ce9-default-rtdb.firebaseio.com/",
   projectId: "health-ai-c7ce9",
   storageBucket: "health-ai-c7ce9.firebasestorage.app",
   messagingSenderId: "135524568781",
@@ -19,3 +22,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export const auth=getAuth(app)
+export const database=getDatabase(app)

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 
+import health from '../assets/healthcare.png'
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -14,11 +16,11 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="navbar-logo">
           <img 
-            src="/path-to-your-logo.png" 
+            src={health}
             alt="Health Logo" 
             className="logo-image"
           />
-          <span className="logo-text">HealthCare</span>
+          <span className="logo-text">HealthySite</span>
         </div>
 
         {/* Mobile Menu Button */}
